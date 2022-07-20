@@ -1,0 +1,189 @@
+@charset "utf-8"; /* © 2016 eckblick GbR */ 
+
+html { font-family: 'Roboto', sans-serif; font-weight:300; /*300 400 500 700*/ }
+
+body {	
+		background: #45484d;
+		background: -moz-radial-gradient(center, ellipse cover,  #45484d 0%, #000000 100%);
+		background: -webkit-radial-gradient(center, ellipse cover,  #45484d 0%,#000000 100%);
+		background: radial-gradient(ellipse at center,  #45484d 0%,#000000 100%);
+	  }
+
+main h1 	{ 	color: rgba(239,188,38,1.00); 
+				font-weight:700;
+				width:100%; 
+				text-align:center; 
+				display:inline-block; 
+				float:left;
+				margin:4vh 0 1vh 0; }
+
+main h2 	{ 	color: rgba(239,188,38,0.70); 
+				font-weight:400;
+				width:100%; 
+				text-align:center; 
+				display:inline-block; 
+				float:left;
+				margin:0.5vh 0 1vh 0;
+				font-size:133%; }
+				
+main > p	 	{ display:inline-block; position:relative; float:left; width:70%; margin:0px 15% 12px 15%; color:rgba(255,255,255,1.00); font-size:105%; clear: both; }	
+				
+#page 			{ text-align:center; }
+
+
+.fb-share-button { position:fixed; top:7px; }
+
+button, .button { display:block; position:fixed; padding:16px 48px; background-color:rgba(255,255,255,1.00); color:rgba(58,58,58,1.00); top:32px; top:4vh; right:90px; -webkit-border-radius: 24px; -webkit-appearance: none !important; z-index:10;
+border-radius: 24px; font-weight:700; background-image: none; background-size:contain; background-position:center; background-repeat:no-repeat;
+-webkit-box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.85);
+box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.85);
+-webkit-transition: all 190ms ease-in-out;
+-moz-transition: all 190ms ease-in-out;
+-ms-transition: all 190ms ease-in-out;
+-o-transition: all 190ms ease-in-out;
+transition: all 190ms ease-in-out; }
+button:hover, .button:hover { background-color:rgba(6,86,152,1.00); color:rgba(255,255,255,1.00);  background-position:left; background-image:url(svg/reload-01.svg);
+-webkit-box-shadow: 1px 1px 2px 0 rgba(0,0,0,1);
+box-shadow: 1px 1px 2px 0 rgba(0,0,0,1); 
+padding:16px 16px 16px 80px;
+-webkit-appearance: none !important;
+}
+
+div.tippschein  { background-color: rgba(235,185,39,1.00); display:inline-block; position:relative; float:left; width:80%; margin:24px 10% 32px 10%; }
+
+div.tippfeld 	{ position:relative; display:block; float:left; 
+				  width:128px; width:15vw; height:128px; height:15vw; 
+				  font-size:0.8vw; font-weight:300; color: rgba(85,85,85,1.00);
+				  background-image:url(svg/quad.svg); background-size:14.3% 14.3%; margin:0.5%; 
+				  -webkit-box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.5);
+				  box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.5); }
+				  
+div.suza 		{ font-size:20px; color:rgba(45,45,45,1.00); display:block; float:left; position:relative; padding:22px; }
+							  
+div.tippfeld div.kreuz { display:block; position:absolute; width:13%; height:13%; margin:0.67% 0 0 0.67%; text-align:center; font-weight:bold; }
+  
+div.tippfeld div.kreuz {
+background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 48%, rgba(0,0,0,0) 100%);
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.15) 0%,rgba(0,0,0,0) 48%,rgba(0,0,0,0) 100%);
+background: radial-gradient(ellipse at center,  rgba(0,0,0,0.15) 0%,rgba(0,0,0,0) 48%,rgba(0,0,0,0) 100%); }
+
+div.kreuz:after { position:absolute; top:5%; left:5%; display:block; content:''; width:90%; height:90%; background-color:rgba(111,185,0,0.2); background-image:url(svg/x.svg); background-position:center bottom; background-size:60%; background-repeat:no-repeat; }
+
+
+/* Target Position: */
+/* Zeilen */
+div.z1,div.z2,div.z3,div.z4,div.z5,div.z6,div.z7{top:0px;}
+div.z8,div.z9,div.z10,div.z11,div.z12,div.z13,div.z14{top:14.3%;}
+div.z15,div.z16,div.z17,div.z18,div.z19,div.z20,div.z21{top:28.6%;}
+div.z22,div.z23,div.z24,div.z25,div.z26,div.z27,div.z28{top:42.9%;}
+div.z29,div.z30,div.z31,div.z32,div.z33,div.z34,div.z35{top:57.2%;}
+div.z36,div.z37,div.z38,div.z39,div.z40,div.z41,div.z42{top:71.5%;}
+div.z43,div.z44,div.z45,div.z46,div.z47,div.z48,div.z49{top:85.8%;}
+/* Spalten */
+div.z1,div.z8,div.z15,div.z22,div.z29,div.z36,div.z43{left:0px;}
+div.z2,div.z9,div.z16,div.z23,div.z30,div.z37,div.z44{left:14.3%;}
+div.z3,div.z10,div.z17,div.z24,div.z31,div.z38,div.z45{left:28.6%;}
+div.z4,div.z11,div.z18,div.z25,div.z32,div.z39,div.z46{left:42.9%;}
+div.z5,div.z12,div.z19,div.z26,div.z33,div.z40,div.z47{left:57.2%;}
+div.z6,div.z13,div.z20,div.z27,div.z34,div.z41,div.z48{left:71.5%;}
+div.z7,div.z14,div.z21,div.z28,div.z35,div.z42,div.z49{left:85.8%;}
+
+
+
+
+/* ////  iPad Portrait  //// */
+@media only screen and (max-width: 1040px)
+{
+button, .button { right:32px; }
+main h1 	{ font-size:145%; }
+main h2 	{ font-size:105%; }
+main > p	{ font-size:76%;  }	
+div.suza 	{ font-size:13px; }			
+button, .button { padding:8px 24px; -webkit-border-radius: 18px; border-radius: 18px; font-weight:500; font-size:80%; }
+button:hover, .button:hover { padding:8px 8px 8px 40px; }
+}
+
+
+
+
+
+
+
+
+
+	div.tippschein { overflow:hidden; }
+	
+	b.ball { margin-right:12px; display:inline-block; padding:8px 0px; 
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #ededed 47%, #d1d1d1 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#ededed 47%,#d1d1d1 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ffffff 0%,#ededed 47%,#d1d1d1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		-webkit-box-shadow: 1px 9px 12px 5px rgba(0,0,0,0.33);
+box-shadow: 1px 9px 12px 5px rgba(0,0,0,0.33);
+
+ 	 	width:140px !important;  min-width:140px !important;  max-width:140px !important; height:140px !important; min-height:140px !important;   max-height:140px !important;  overflow:hidden; 
+		border-radius:50%; text-align:center; line-height:120px; margin-left: 0px;
+		
+		box-sizing: border-box !important;
+	
+		 transform:rotateZ(0deg);
+		
+  animation-name: rotater;
+  animation-duration: 1.2s;
+		
+		margin-top:3px;
+	
+	} 
+	
+	
+	
+	@keyframes rotater {
+  0% { transform:rotateZ(-180deg); margin-left: -200px; }
+  /* 99% { transform:rotateZ(1deg); margin-left: 2px; } */
+  100% { transform:rotateZ(0deg);  margin-left: 0px; }
+}
+	
+	
+	
+
+div.clear,
+	div.tippschein {
+			display:   flex; 
+			flex-wrap: wrap; 
+			
+			justify-content: 	space-around; 	/* Position Items Horizontal */
+			align-items: 		stretch; 	/* Stretch Items Vertical */
+			align-content: 		space-around; 	/* Position (Stretch) Items Vertical  */
+	}
+	
+	
+	div.tippfeld {
+		
+    position: relative;
+    display: inline-block;
+    margin: 8px 0px 8px 0px !important;
+
+		
+		
+	}
+	
+
+
+
+
+
+@media only screen and (max-width: 1440px) {
+
+	div.tippschein {
+
+		width: 100% !important;
+		margin: 24px 0px 32px 0px;
+
+	}
+
+	div.tippfeld 	{ width:300px !important; height:300px !important; font-size:12px !important;  margin:4px !important; }
+	div.suza 		{ font-size:19px !important; }	
+	b.ball 			{ margin-right:6px !important; margin-left:4px !important; margin-top: 4px !important; flex:1; display:block; }
+
+}
+
